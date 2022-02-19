@@ -16,7 +16,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
-        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.release>17</maven.compiler.release>
         <mainClass>geolocator.Main</mainClass>
     </properties>
     <dependencies>
@@ -28,20 +28,12 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
-            <scope>compile</scope>
-        </dependency>
-
-<!--
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
             <scope>compile</scope>
         </dependency>
--->
+
     </dependencies>
     <build>
         <plugins>
@@ -58,7 +50,7 @@
                     <mainClass>${mainClass}</mainClass>
                 </configuration>
             </plugin>
-<!--
+
             <plugin>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok-maven-plugin</artifactId>
@@ -72,7 +64,7 @@
                     </execution>
                 </executions>
             </plugin>
--->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
